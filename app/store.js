@@ -1,6 +1,8 @@
 import Song from "./Models/Song.js";
 
 let _state = {
+  /** Active song displayed in center of page */
+  activeSong: {},
   /** Collection of Songs from search Results
    * @type {Song[]} */
   songs: [],
@@ -13,6 +15,7 @@ let _state = {
  * @type {{[x:string]: function[]}}
  */
 let _listeners = {
+  activeSong: [],
   songs: [],
   playlist: []
 };

@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <title>Music is Fun</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -18,9 +23,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/style.css" />
-    <title>Music is Fun</title>
   </head>
-
   <body>
     <!-- SECTION Header-->
     <header class="container-fluid bg-dark text-white m-0 py-4">
@@ -34,7 +37,7 @@
       <div class="row">
         <!-- SECTION Music search and search display -->
         <div class="col-3 bg-secondary p-3">
-          <form onsubmit="app.songsController.search(event)">
+          <form onsubmit="app.SongsController.search(event)">
             <div class="input-group mx-auto my-2">
               <input
                 type="text"
@@ -50,7 +53,7 @@
               </div>
             </div>
           </form>
-          <div class="row" id="search-results">
+          <div class="row" id="search-display">
             <!-- NOTE Song.js display template below this comment -->
 
             <!-- END Song.js display template-->
@@ -59,7 +62,7 @@
         <!-- !SECTION End music search -->
         <!-- SECTION Active song display-->
         <div class="col-6">
-          <div class="h5 ml-5">Now Playing:</div>
+          <div class="h4 ml-5">Now Playing:</div>
           <div class="row">
             <div
               class="col-8 mx-auto bg-white d-flex flex-column justify-content-between align-items-center active-song-details"
@@ -89,14 +92,11 @@
     <footer class="container-fluid"></footer>
     <!-- !SECTION End footer -->
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
-      integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
     <script
@@ -109,6 +109,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="app/main.js" type="module"></script>
   </body>
 </html>
